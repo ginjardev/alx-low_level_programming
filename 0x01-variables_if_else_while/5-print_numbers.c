@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 /**
- * main - counts 0 - 9 
+ * main - counts 0 - 9
  * Return: zero is returned
  */
 
 int main(void)
 {
-	int j;
+	int i;
 
 	for (i = 0; i < 10; i++)
 	{
