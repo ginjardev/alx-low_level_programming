@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
+#include <stdio.h>
 
 /**
  * main - assigns random number to n
@@ -22,7 +22,7 @@ int main(void)
 	}
 	else
 	{
-		printf("%d", "is negative");
+		printf("%s", "is negative");
 	}
 	return (0);
 }
