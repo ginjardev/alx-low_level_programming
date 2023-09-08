@@ -12,7 +12,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	int reminder = n % 10;
+	int remainder = n % 10;
 
 	if (remainder == 0)
 	{
