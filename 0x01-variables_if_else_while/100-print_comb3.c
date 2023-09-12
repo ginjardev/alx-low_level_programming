@@ -8,10 +8,12 @@
 int main(void)
 {
 	unsigned int counter = 1;
+	unsigned int i;
+	unsigned int j;
 
-	for (unsigned int i = 0; i < 10; i++)
+	for (int i = 0; i < 10; i++)
 	{
-		for (unsigned int j = 1; j < 10; j++)
+		for (int j = 1; j < 10; j++)
 		{
 			putchar('0' + i);
 			putchar('0' + j);
