@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* main - tests _islower() 
+* main - tests _islower()
 * Return: 0
 */
 
