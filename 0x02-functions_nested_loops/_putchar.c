@@ -2,11 +2,11 @@
 #include "main.h"
 
 /**
-* _pchar - implement char printing
+* _putchar - implement char printing
 * Return: write output to stdout
 */
 
-int _pchar(char ch)
+int _putchar(char ch)
 {
 	return (write(1, &ch, 1));
 }
