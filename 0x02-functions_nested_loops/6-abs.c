@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* int_abs - return absolute numbers
-*@n: number to be converted to absolute
-* Returns: absolute number
+* _abs - return absolute numbers
+* @n: number to be converted to absolute
+* Return: absolute number
 */
 
 int _abs(int n)
