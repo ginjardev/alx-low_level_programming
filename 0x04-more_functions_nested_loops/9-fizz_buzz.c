@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints Fizz, Buzz, FizzBuzz & integers
+ * main - prints Fizz, Buzz, FizzBuzz & integers.
  * Return: 0
  */
 
