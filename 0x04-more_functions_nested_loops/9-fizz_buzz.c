@@ -1,19 +1,11 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
- * fizz_buzz - prints Fizz, Buzz, FizzBuzz & integers
- * main - test fizz_buzz
+ * main - prints Fizz, Buzz, FizzBuzz & integers
  * Return: 0
  */
 
 int main(void)
-{
-	fizz_buzz();
-	return (0);
-}
-
-void fizz_buzz(void)
 {
 	int i;
 
@@ -30,4 +22,5 @@ void fizz_buzz(void)
 	}
 
 	putchar('\n');
+	return (0);
 }
