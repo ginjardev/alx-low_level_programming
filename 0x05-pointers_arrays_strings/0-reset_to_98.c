@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - resets variable value to 98
- * @*n: pointer variable
+ * @n: pointer variable
  * Return: 0
  */
 
