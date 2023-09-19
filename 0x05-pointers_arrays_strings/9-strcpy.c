@@ -4,6 +4,7 @@
  * *_strcpy - copies string from source
  * @dest: destination array
  * @src: source array
+ * Return: array with copied content
  */
 
 char *_strcpy(char *dest, char *src)
