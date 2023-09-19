@@ -17,7 +17,7 @@ void rev_string(char *s)
 		{
 			s[i] = s[j];
 		}
-		prinf("%c", s[i]);
+		printf("%c", s[i]);
 
 		i++;
 	}
