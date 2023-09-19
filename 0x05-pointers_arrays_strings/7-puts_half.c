@@ -23,7 +23,7 @@ void puts_half(char *str)
 		j++;
 	}
 
-	whilw (j < i)
+	while (j < i)
 	{
 		putchar(str[j]);
 		j++;
