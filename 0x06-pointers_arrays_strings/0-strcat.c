@@ -1,3 +1,5 @@
+#include <main.h>
+
 /**
  * _strcat - joins two strings
  * @dest: destination string array
@@ -17,6 +19,7 @@ char *_strcat(char *dest, char *src)
 	{
 		dest[k + i] = src[i];
 		i++;
+		k++;
 	}
 
 	return (dest)
