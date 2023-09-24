@@ -9,7 +9,8 @@
 char *leet(char *c)
 {
 	int i, j;
-	char replace[] = "aAeEoOtTlL4433007711";
+	char *replace;
+	replace = "aAeEoOtTlL4433007711";
 
 	for (i = 0; c[i] != '\0'; i++)
 	{
