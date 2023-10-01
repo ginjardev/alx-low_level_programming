@@ -20,13 +20,13 @@ int main(int argc, char *argv[])
 	{
 		for (i = 0; i < argc; i++)
 		{
-			if(sizeof(argv[i]) == sizeof(int))
+			if(sizeof(atoi(argv[i])) == sizeof(int))
 			{
-				sum += argv[i];
+				sum += atoi(argv[i]);
 			}
 			else
 			{
-				print("%s\n", "Error");
+				printf("%s\n", "Error");
 				return (1);
 			}
 		}
