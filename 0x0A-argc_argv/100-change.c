@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
 
 	change = atoi(input);
 
-	if ( change >= 0 && checknumber(input) == 0)
+	if (change >= 0 && checknumber(input) == 0)
 	{
 		printf("%s\n", "Error");
 		return (1);
