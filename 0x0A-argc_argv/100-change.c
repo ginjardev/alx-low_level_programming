@@ -56,11 +56,8 @@ int main(int argc, char *argv[])
 		printf("%s\n", "Error");
 		return (1);
 	}
-
 	if (change < 0)
-	{
 		change = 0;
-	}
 
 	coins = change / 25;
 	change = change % 25;
@@ -71,8 +68,6 @@ int main(int argc, char *argv[])
 	coins = coins + change / 2;
 	change = change % 2;
 	coins += change;
-
 	printf("%d\n", coins);
-
 	return (0);
 }
