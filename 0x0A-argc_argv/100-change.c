@@ -13,7 +13,7 @@ int checknumber(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[i] < '0'; || s[i] > '9')
+		if (s[i] < '0' || s[i] > '9')
 		{
 			return (0);
 		}
@@ -30,7 +30,7 @@ int checknumber(char *s)
  * Return: 0
  */
 
-int main(int argc, char argv[])
+int main(int argc, char *argv[])
 {
 	int coins, change;
 	char *input = argv[1];
@@ -69,7 +69,7 @@ int main(int argc, char argv[])
 	coins = coins + change / 5;
 	change = change % 5;
 	coins = coins + change / 2;
-	chnage = change % 2;
+	change = change % 2;
 	coins += change;
 
 	printf("%d\n", coins);
