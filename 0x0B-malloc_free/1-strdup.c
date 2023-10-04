@@ -8,9 +8,10 @@
 
 char *_strdup(char *str)
 {
-	int i = j = 0;
 	char *s;
+	int i, j;
 
+	i = j = 0;
 
 	if (str == NULL)
 		return (NULL);
@@ -32,5 +33,4 @@ char *_strdup(char *str)
 	}
 
 	return (s);
-	}
 }
