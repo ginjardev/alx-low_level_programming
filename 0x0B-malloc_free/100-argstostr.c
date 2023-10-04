@@ -2,6 +2,24 @@
 #include <stdio.h>
 
 /**
+ * _strlen - Calculate the lenght of a string
+ *
+ * @str: String to calculate it lenght.
+ *
+ * Return: The lenght of the string.
+ */
+int _strlen(char *str)
+{
+	int len = 0, i;
+
+	for (i = 0; str[i]; i++)
+		len++;
+
+	return (len);
+}
+
+
+/**
  * argstostr - Concatenates all the arguments of the program in a new string.
  *
  * @ac: Argument count.
@@ -35,21 +53,4 @@ char *argstostr(int ac, char **av)
 	args[index] = '\0';
 
 	return (args);
-}
-
-/**
- * _strlen - Calculate the lenght of a string
- *
- * @str: String to calculate it lenght.
- *
- * Return: The lenght of the string.
- */
-int _strlen(char *str)
-{
-	int len = 0, i;
-
-	for (i = 0; str[i]; i++)
-		len++;
-
-	return (len);
 }
