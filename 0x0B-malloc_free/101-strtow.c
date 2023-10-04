@@ -2,6 +2,40 @@
 #include <stdio.h>
 
 /**
+ * count_words - Count the words in a string.
+ *
+ * @str: String.
+ *
+ * Return: Number of words in a string
+ */
+int count_words(char *str)
+{
+	int i, res = 0;
+
+	for (i = 0; str[i]; i++)
+	{
+		if (str[i] != ' ' && (str[i - 1] == ' ' || i == 0))
+			res++;
+	}
+	return (res);
+}
+
+/**
+ * free_arr -  Free a 2D array.
+ *
+ * @arr: Array to free.
+ * @len: lenght of the array.
+ */
+void free_arr(char **arr, int len)
+{
+	int i;
+
+	for (i = 0; i < len; i++)
+		free(arr[i]);
+	free(arr);
+}
+
+/**
  * strtow - Splits a string into array of words.
  *
  * @str: String to split
@@ -51,40 +85,4 @@ char **strtow(char *str)
 		}
 	}
 	return (words);
-}
-
-/**
- * count_words - Count the words in a string.
- *
- * @str: String.
- *
- * Return: Number of words in a string
- */
-
-int count_words(char *str)
-{
-	int i, res = 0;
-
-	for (i = 0; str[i]; i++)
-	{
-		if (str[i] != ' ' && (str[i - 1] == ' ' || i == 0))
-			res++;
-	}
-	return (res);
-}
-
-/**
- * free_arr -  Free a 2D array.
- *
- * @arr: Array to free.
- * @len: lenght of the array.
- */
-
-void free_arr(char **arr, int len)
-{
-	int i;
-
-	for (i = 0; i < len; i++)
-		free(arr[i]);
-	free(arr);
 }
