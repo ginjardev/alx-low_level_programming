@@ -5,7 +5,6 @@
  * @n: square parameter
  * Return: squareroot
  */
-int find_sqrt(int n, int i);
 
 int _sqrt_recursion(int n)
 {
@@ -22,6 +21,8 @@ int _sqrt_recursion(int n)
  * @i: i parameter
  * Return: squareroot or -1
  */
+
+int find_sqrt(int n, int i);
 
 int find_sqrt(int n, int i)
 {
