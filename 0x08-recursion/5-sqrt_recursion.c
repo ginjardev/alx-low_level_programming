@@ -22,8 +22,6 @@ int _sqrt_recursion(int n)
  * Return: squareroot or -1
  */
 
-int find_sqrt(int n, int i);
-
 int find_sqrt(int n, int i)
 {
 	if (n == i * i)
