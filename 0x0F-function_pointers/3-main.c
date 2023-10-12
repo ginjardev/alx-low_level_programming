@@ -3,22 +3,23 @@
 /**
  * main - Perform simple operation between two numbers.
  *
- * @ac: Argument count.
- * @av: Argument vecteur.
+ * @argc: Argument count.
+ * @argv: Argument vecteur.
  *
  * Return: 0 Success.
  */
-int main(int ac, char **av)
+
+int main(int argc, char *argv[])
 {
 	int (*operation)(int, int);
 
-	if (ac != 4)
+	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
 
-	operation = get_op_func(av[2]);
+	operation = get_op_func(argv[2]);
 
 	if (operation == 0)
 	{
@@ -26,7 +27,7 @@ int main(int ac, char **av)
 		exit(99);
 	}
 
-	printf("%d\n", operation(atoi(av[1]), atoi(av[3])));
+	printf("%d\n", operation(atoi(argv[1]), atoi(argv[3])));
 
 	return (0);
 }

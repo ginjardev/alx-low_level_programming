@@ -1,7 +1,7 @@
 #include "3-calc.h"
 
 /**
- * op_adds - add two integers a and b
+ * op_add - add two integers a and b
  * @a: first int parameter
  * @b: second int parameter
  * Return: sum of a and b
