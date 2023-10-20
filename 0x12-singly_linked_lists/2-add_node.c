@@ -1,9 +1,9 @@
 /**
-* _strnlen - returns the length of a string
+* _strlen - returns the length of a string
 * @s: string to count
 * Return: lenth of string
 */
-int _strnlen(const char *s)
+int _strlen(const char *s)
 {
 	int i;
 
@@ -29,7 +29,7 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 
 	new->str = strdup(str);
-	new->len = _strnlen(str);
+	new->len = _strlen(str);
 	new->next = *head;
 
 	*head = new;
