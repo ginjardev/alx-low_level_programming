@@ -1,3 +1,5 @@
+#include "lists.h"
+
 /**
 * _strlen - returns length of a string
 * @s: string parameter
