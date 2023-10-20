@@ -7,22 +7,28 @@
  */
 size_t print_list(const list_t *h)
 {
-	const list_t *current_node;
-	size_t number;
+	size_t node_count = 1;
 
-	current_node = h;
-	for (number = 0; current_node != NULL; number++)
+	/*return 0 as number of nodes*/
+	if (h == NULL)
+		return (0);
+
+	while (h->next != NULL)
 	{
-		if (current_node->str == NULL)
-		{
-			printf("[0] (nil)\n");
-		}
+		/*if str is NULL return len as 0 and str as (nil)*/
+		if (h->str == NULL)
+			printf("[%d] %s\n", 0, "(nil)");
 		else
-		{
-			printf("[%d] %s\n", current_node->len, current_node->str);
-		}
-		current_node = current_node->next;
+			printf("[%d] %s\n", h->len, h->str);
+
+		/*go to the next node*/
+		h = h->next;
+		/*count number of nodes*/
+		node_count += 1;
 	}
 
-	return (number);
+	/*print for the last node*/
+	printf("[%d] %s\n", h->len, h->str);
+
+	return (node_count);
 }
