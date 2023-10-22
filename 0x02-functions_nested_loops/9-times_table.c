@@ -29,9 +29,17 @@ void times_table(void)
 				mod = product % 10;
 				_putchar(mod + '0');
 			}
-			if ( j < 9)
+			if (j < 9)
 			{
 				_putchar(',');
+			}
+			if (product > 9)
+			{
+				_putchar(' ');
+			}
+			else
+			{
+				_putchar(' ');
 				_putchar(' ');
 			}
 		}
