@@ -24,13 +24,13 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		return (1);
 	}
 
-	while(current_node != NULL && a < index - 1)
+	while (current_node != NULL && a < index - 1)
 	{
 		current_node = current_node->next;
 		a++;
 	}
 
-	if(a != index - 1)
+	if (a != index - 1)
 		return (-1);
 
 	swap = current_node->next;
