@@ -15,17 +15,17 @@ size_t print_listint_safe(const listint_t *head)
 	{
 		for (a = 0; a < number; a++)
 		{
-			if (head == visited_node[i])
+			if (head == visited_node[a])
 			{
 				printf("-> [%p] %d\n", (void *)head, head->n);
 				return (number);
 			}
 		}
 
-		visited[number++] = head;
+		visited_node[number++] = head;
 		printf("[%p] %d\n", (void *)head, head->n);
 		head = head->next;
 	}
 
-	return (num);
+	return (number);
 }
