@@ -4,6 +4,7 @@
  * add_nodeint_end - add node to end
  * @head: linked list
  * @n: int parameter
+ * Return: new node address
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
