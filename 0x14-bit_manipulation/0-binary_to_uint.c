@@ -2,7 +2,7 @@
 
 /**
  * powr - calculates power of number
- * @x: number parameter
+ * @x: number  parameter
  * @y: power parameter
  * Return: power of number (x ^ y)
  */
@@ -10,7 +10,10 @@ unsigned int powr(unsigned int x, unsigned int y)
 {
 	if (y == 0)
 		return (1);
-	return (x * powr(x, y - 1));
+	else if (y == 1)
+		return (2);
+
+	return (x * powr(c, y - 1));
 }
 
 /**
