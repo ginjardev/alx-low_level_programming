@@ -10,7 +10,7 @@ unsigned int powr(unsigned int x, unsigned int y)
 {
 	if (y == 0)
 		return (1);
-	return (x * powr(x, y -1));
+	return (x * powr(x, y - 1));
 }
 
 /**
