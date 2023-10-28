@@ -1,4 +1,4 @@
-#include "lists.h"
+#include "main.h"
 
 /**
  * set_bit - sets bit to 1 at index
