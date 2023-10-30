@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 	if (argc != 3)
 		print_exit_code(97, "Usage: cp file_from file_to\n", argv[0]);
 
-	src = open(av[1], O_RDONLY);
+	src = open(argv[1], O_RDONLY);
 	if (src == -1)
 		print_exit_code(98, "Error: Can't read from file %s\n", argv[1]);
 
