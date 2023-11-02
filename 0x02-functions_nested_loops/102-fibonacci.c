@@ -23,11 +23,7 @@ void fibonacci_50(void)
 
 	for (counter = 0; counter < 49; counter++)
 	{
-		if (counter == 0)
-			printf("%d, \n", counter);
-		else if (counter == 1)
-			printf("%d, ", counter);
-		printf("%ld, \n", next);
+		printf("%ld, ", next);
 		first = second;
 		second = next;
 		next = first + second;
