@@ -19,6 +19,7 @@ void fibonacci_50(void)
 {
 	int counter;
 	long first = 0, second = 1, next;
+
 	next = first + second;
 
 	for (counter = 0; counter < 49; counter++)
@@ -29,5 +30,5 @@ void fibonacci_50(void)
 		next = first + second;
 	}
 
-	printf("%ld \n", next);
+	printf("%ld\n", next);
 }
