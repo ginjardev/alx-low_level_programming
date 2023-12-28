@@ -14,11 +14,11 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	unsigned int counter = 0;
 
 	/*add node at beginning if necessary*/
-	if (idx == 0)
+	if (idx == 0 || *h == NULL)
 		return (add_dnodeint(h, n));
 
 	move = *h;
-	while (move && counter < idx - 1)
+	while (move && counter < (idx - 1))
 	{
 		move = move->next;
 		counter++;
